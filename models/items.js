@@ -1,11 +1,12 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const campingSchema = new Schema({
+const itemsSchema = new Schema({
     name: {
         type: String,
         required: true
     },
+    url: String,
     price: Number,
     description: String,
     contactInfo: {
@@ -17,4 +18,4 @@ const campingSchema = new Schema({
     _id: String
 })
 
-module.exports = mongoose.model("camping", campingSchema)
+module.exports = mongoose.model("items", itemsSchema)
