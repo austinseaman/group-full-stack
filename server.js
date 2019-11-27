@@ -5,10 +5,8 @@ const PORT = 8080
 
 app.use(express.json())
 
-app.use("/camping", require('./routes/campingRouter'))
-app.use("/cycling", require('./routes/cyclingRouter'))
-app.use("/fishing", require('./routes/fishingRouter'))
-app.use("/skiing", require('./routes/skiingRouter'))
+app.use("/classifiedItems", require('./routes/itemsRouter'))
+
 
 mongoose.connect('mongodb://localhost:27017/storedb',
 {

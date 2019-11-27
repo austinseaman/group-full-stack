@@ -1,11 +1,10 @@
 const express = require('express')
-const cyclingRouter = express.Router()
+const itemRouter = express.Router()
 const uuid = require('uuid/v4')
 const Items = require('../models/items')
 
 
-
-cyclingRouter.get('/', (req, res) => {
+itemRouter.get('/', (req, res) => {
     Items.find((err, items) => {
         if(err){
             res.status(500) 
@@ -16,17 +15,17 @@ cyclingRouter.get('/', (req, res) => {
 })
 
 // Posting
-cyclingRouter.post('/', (req, res) => {
+itemRouter.post('/', (req, res) => {
     req.body._id = uuid()
-    const newCycling = new Items(req.body)
-    newCycling.save((err, cycling) => {
+    const newItem = new Items(req.body)
+    newItem.save((err, item) => {
         if(err) return res.status(500).send(err)
-        return res.status(201).send(cycling)
+        return res.status(201).send(item)
     })
 })
 
 //Get One
-cyclingRouter.get('/:_id', (req, res) => {
+itemRouter.get('/:_id', (req, res) => {
     const foundItem = Items.findById(req.params._id, (err, item) => {
         if(err){
             return res.status(500).send(err)
@@ -36,7 +35,7 @@ cyclingRouter.get('/:_id', (req, res) => {
 })
 
 //Delete
-cyclingRouter.delete('/:_id', (req, res) => {
+itemRouter.delete('/:_id', (req, res) => {
     Items.findOneAndRemove({_id: req.params._id}, (err, item) => {
     if(err){
         res.status(500).send(err)
@@ -50,7 +49,7 @@ cyclingRouter.delete('/:_id', (req, res) => {
 })
 
 //Put Edit
-cyclingRouter.put("/:_id", (req, res) => {
+itemRouter.put("/:_id", (req, res) => {
     Items.findOneAndUpdate(
         {_id: req.params._id},
         req.body,
@@ -65,4 +64,4 @@ cyclingRouter.put("/:_id", (req, res) => {
     )
 })
 
-module.exports = cyclingRouter
+module.exports = itemRouter
