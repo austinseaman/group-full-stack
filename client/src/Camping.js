@@ -3,32 +3,16 @@ import {withProvider} from './MainProvider'
 import Item from './Item'
 
 class Camping extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            campingItems: []
-        }
-    }
     componentDidMount() {
-        this.props.getItems()
-        
-        let campingArr = this.props.items.filter(item => {
-            console.log(item)
-            return (item.category === 'Camping')
-        })
-        this.setState({
-            campingItems: campingArr
-        })
+        this.props.getCamping()
     }
+
     render() {
-        let mappedCamping = this.state.campingItems.map((item)=>{
-            return <Item name={item.name}/>
-        })
-        
+        console.log(this.props)
+        const mappedCamping = this.props.camping.map((camp, i) => <Item key={i + camp.price} price={camp.price}/>)
         return (
             <div>
             {mappedCamping}
-
             </div>
         );
     }

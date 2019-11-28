@@ -8,19 +8,31 @@ class MainProvider extends Component {
   constructor() {
     super();
     this.state = {
-      items: [],
-      
+      camping: [],
+      cycling: [],
+      fishing: [],
+      skiing: [],
     }
   }
 
-  getItems = () => {
-    axios.get('/classifiedItems').then((res)=>{
-          
-          this.setState({
-            items: res.data
-          })
-      console.log(this.state.items)
-    });
+  getCamping = () => {
+    axios.get('/classifiedItems').then((res) => {
+      // for (let i = 0; i < res.data.length; i++){
+      //   if(res.data[i].category === 'Camping'){
+      //     this.setState({camping: res.data[i]})
+      //   }
+      // }
+
+      // filter
+      const campingFilter = res.data.filter((category) => {
+        return category.category === 'Camping' 
+      })
+      this.setState({camping: campingFilter})
+
+      // setState
+
+      console.log(this.state.camping)
+    })
   }
   
   
@@ -32,6 +44,7 @@ class MainProvider extends Component {
       <Provider value={{
         ...this.state,
         getItems: this.getItems,
+        getCamping: this.getCamping,
       }}>
         {this.props.children}
       </Provider>

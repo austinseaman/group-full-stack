@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { withProvider } from './MainProvider';
+// import axios from 'axios';
 
 
-const Item = (props) => {
-    return (
-        <div>
-            <h3>{props.name}</h3>
-        </div>
-    )
+class Item extends Component {
+    constructor() {
+        super()
+        this.state = {
+            itemInfo: {},
+        }
+    }
+    // componentDidMount() {
+    //     axios.get(this.props).then(res => {
+    //         this.setState({itemInfo: res.data})
+    //     })
+    // }
+
+    render() {
+        console.log(this.props)
+        let {price} = this.props
+        return (
+            <div>
+                <h3>
+                    {price}
+                </h3>
+            </div>
+        )
+    }
 }
 
 
-export default Item;
+export default withProvider(Item);
