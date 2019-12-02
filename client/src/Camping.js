@@ -8,7 +8,6 @@ class Camping extends Component {
     }
 
     render() {
-        console.log(this.props)
         const mappedCamping = this.props.camping.map((camp, i) => <Item key={i + camp.price} price={camp.price} name={camp.name} url={camp.url} _id={camp._id} />)
         return (
             <div>

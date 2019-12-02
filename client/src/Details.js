@@ -19,7 +19,6 @@ class Details extends React.Component {
       this.setState({
         storage: res.data
       })
-      console.log(res.data)
     })
 
   }
@@ -30,7 +29,6 @@ class Details extends React.Component {
 
   render() {
     let {name, url, price, description} = this.state.storage
-    let lowerCat = this.state.storage.category
     
     return (
      <div>
