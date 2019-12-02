@@ -7,7 +7,7 @@ class Skiing extends Component {
         this.props.getSkiing()
     }
     render() {
-        const mappedSkiing = this.props.skiing.map((ski, i) => <Item key={i + ski.price} price={ski.price} name={ski.name} url={ski.url} id={ski._id} />)
+        const mappedSkiing = this.props.skiing.map((ski, i) => <Item key={i + ski.price} price={ski.price} name={ski.name} url={ski.url} _id={ski._id} />)
         return (
             <div>
                 {mappedSkiing}

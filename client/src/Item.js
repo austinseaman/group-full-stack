@@ -17,7 +17,6 @@ class Item extends Component {
     // }
 
     render() {
-        console.log(this.props)
         let {price, name, url, _id} = this.props;
         return (
             <div className="productinfo">
