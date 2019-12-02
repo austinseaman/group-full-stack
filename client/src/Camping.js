@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {withProvider} from './MainProvider'
+import { withProvider } from './MainProvider'
 import Item from './Item'
 
 class Camping extends Component {
@@ -9,10 +9,10 @@ class Camping extends Component {
 
     render() {
         console.log(this.props)
-        const mappedCamping = this.props.camping.map((camp, i) => <Item key={i + camp.price} price={camp.price}/>)
+        const mappedCamping = this.props.camping.map((camp, i) => <Item key={i + camp.price} price={camp.price} />)
         return (
             <div>
-            {mappedCamping}
+                {mappedCamping}
             </div>
         );
     }

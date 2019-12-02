@@ -17,12 +17,6 @@ class MainProvider extends Component {
 
   getCamping = () => {
     axios.get('/classifiedItems').then((res) => {
-      // for (let i = 0; i < res.data.length; i++){
-      //   if(res.data[i].category === 'Camping'){
-      //     this.setState({camping: res.data[i]})
-      //   }
-      // }
-
       // filter
       const campingFilter = res.data.filter((category) => {
         return category.category === 'Camping' 

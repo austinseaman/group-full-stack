@@ -1,11 +1,13 @@
 import React from 'react';
 import Camping from './Camping'
+import PostPage from './PostPage';
 
 
 function App() {
   return (
     <div>
-      <Camping/>
+      <PostPage />
+      <Camping />
     </div>
   );
 }
