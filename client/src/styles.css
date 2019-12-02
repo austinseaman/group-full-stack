@@ -1,0 +1,10 @@
+.productinfo {
+    border: 1px solid black;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+.imgs {
+    max-width: 200px;
+}
