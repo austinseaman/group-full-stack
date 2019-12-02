@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 
 
@@ -29,9 +30,11 @@ class Details extends React.Component {
 
   render() {
     let {name, url, price, description} = this.state.storage
-    console.log(this.state.storage.contactInfo)
+    let lowerCat = this.state.storage.category
+    
     return (
      <div>
+      <Link to={`/${this.state.storage.category}`}>Back</Link>
       <h2>{name}</h2>
       <img src={url} alt='the pic'></img>
       <h4>{price}</h4>
