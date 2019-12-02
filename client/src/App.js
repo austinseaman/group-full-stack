@@ -9,7 +9,7 @@ import Camping from "./Camping";
 import Cycling from "./Cycling";
 import Fishing from "./Fishing";
 import Skiing from "./Skiing";
-import AddItemForm from "./AddItemForm"
+import PostPage from "./PostPage"
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Route path='/skiing' component={Skiing}/>
         <Route path='/fishing' component={Fishing}/>
         <Route path='/cycling' component={Cycling}/>
-        {/* <Route path='/AddItemForm' component={AddItemForm}/> */}
+        <Route path='/post' component={PostPage}/>
       </Switch>
     </div>
   );
