@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withProvider } from './MainProvider';
-// import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 
 class Item extends Component {
@@ -18,14 +18,16 @@ class Item extends Component {
 
     render() {
         console.log(this.props)
-        let {price, name, url} = this.props
+        let {price, name, url, _id} = this.props;
         return (
             <div className="productinfo">
-                <img className="imgs" alt="item" src={url}></img>
-                <h2>{name}</h2>
-                <h3>
-                    ${price}
-                </h3>
+                <Link to={`/details/${_id}`}>
+                    <img className="imgs" alt="item" src={url}></img>
+                    <h2>{name}</h2>
+                    <h3>
+                        ${price}
+                    </h3>
+                </Link>
             </div>
         )
     }

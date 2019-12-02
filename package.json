@@ -1,0 +1,26 @@
+{
+  "name": "group-full-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinseaman/group-full-stack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austinseaman/group-full-stack/issues"
+  },
+  "homepage": "https://github.com/austinseaman/group-full-stack#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12",
+    "uuid": "^3.3.3"
+  }
+}

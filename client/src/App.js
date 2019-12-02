@@ -10,6 +10,7 @@ import Cycling from "./Cycling";
 import Fishing from "./Fishing";
 import Skiing from "./Skiing";
 import PostPage from "./PostPage"
+import Details from './Details';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/fishing' component={Fishing}/>
         <Route path='/cycling' component={Cycling}/>
         <Route path='/post' component={PostPage}/>
+        <Route path='/details/:_id' exact component={Details} />
       </Switch>
     </div>
   );
