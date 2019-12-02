@@ -18,11 +18,13 @@ class Item extends Component {
 
     render() {
         console.log(this.props)
-        let {price} = this.props
+        let {price, name, url} = this.props
         return (
-            <div>
+            <div className="productinfo">
+                <img className="imgs" alt="item" src={url}></img>
+                <h2>{name}</h2>
                 <h3>
-                    {price}
+                    ${price}
                 </h3>
             </div>
         )

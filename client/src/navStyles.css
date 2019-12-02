@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:100,400&display=swap');
+.nav-container {
+  color: white;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.nav-logo Link {
+    text-decoration: none;
+}
+.nav-logo Link {
+  display: flex;
+  font-family: 'Barlow Condensed', sans-serif;
+  cursor: pointer;
+}
+
+.vtrade-logo {
+    
+    height: auto;
+    max-width: 150px;
+}
+#title-v {
+  border-bottom: 3px solid white;
+  width: auto;
+  align-self: center;
+  margin-right: 15px;
+  margin-left: 5px;
+  
+}
+.dropdown {
+  cursor: pointer;
+  margin-right: 5px;
+}
+.dropdown-title {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.dropdown-content {
+  margin-right: 8px;
+  color: black;
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: rgb(155, 155, 155);
+  width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+.dropdown-content h2 {
+  width: auto;
+  text-align: center;
+}
+.dropdown-content h2:hover {
+  border: 3px solid black;
+  width: auto;
+  align-self: center;
+}
