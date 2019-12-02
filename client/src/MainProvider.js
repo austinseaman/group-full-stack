@@ -17,34 +17,69 @@ class MainProvider extends Component {
 
   getCamping = () => {
     axios.get('/classifiedItems').then((res) => {
-      // for (let i = 0; i < res.data.length; i++){
-      //   if(res.data[i].category === 'Camping'){
-      //     this.setState({camping: res.data[i]})
-      //   }
-      // }
-
       // filter
       const campingFilter = res.data.filter((category) => {
         return category.category === 'Camping' 
       })
       this.setState({camping: campingFilter})
-
+      
       // setState
-
+      
       console.log(this.state.camping)
     })
   }
+
+  getCycling = () => {
+    axios.get('/classifiedItems').then((res) => {
+      // filter
+      const cyclingFilter = res.data.filter((category) => {
+        return category.category === 'Cycling' 
+      })
+      this.setState({cycling: cyclingFilter})
+      
+      // setState
+      
+      console.log(this.state.cycling)
+    })
+  }
   
+  getFishing = () => {
+    axios.get('/classifiedItems').then((res) => {
+      // filter
+      const fishingFilter = res.data.filter((category) => {
+        return category.category === 'Fishing' 
+      })
+      this.setState({fishing: fishingFilter})
+      
+      // setState
+      
+      console.log(this.state.fishing)
+    })
+  }
   
-  
+  getSkiing = () => {
+    axios.get('/classifiedItems').then((res) => {
+      // filter
+      const skiingFilter = res.data.filter((category) => {
+        return category.category === 'Skiing' 
+      })
+      this.setState({skiing: skiingFilter})
+
+      // setState
+
+      console.log(this.state.skiing)
+    })
+  }
   
   render() {
     
     return (
       <Provider value={{
         ...this.state,
-        getItems: this.getItems,
         getCamping: this.getCamping,
+        getCycling: this.getCycling,
+        getFishing: this.getFishing,
+        getSkiing: this.getSkiing,
       }}>
         {this.props.children}
       </Provider>
