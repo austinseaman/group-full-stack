@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:100,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 .nav-container {
   color: white;
   background-color: black;
@@ -15,11 +22,11 @@
   margin-right: 6px;
 }
 .post-link:hover {
-  color: #efb41c
+  color: lightblue
 }
 
 .dropdown:hover {
-  color: #efb41c
+  color: lightblue
 }
 
 .nav-logo Link {
@@ -29,6 +36,7 @@
   display: flex;
   font-family: 'Barlow Condensed', sans-serif;
   cursor: pointer;
+  align-items: center;
 }
 
 .vtrade-logo {
@@ -66,6 +74,7 @@
 }
 .dropdown:hover .dropdown-content {
   display: inline-block;
+  text-decoration: none;
 }
 .dropdown-content h2 {
   width: auto;
@@ -75,13 +84,12 @@
   text-decoration: none;
 }
 .dropdown-content h2:hover {
-  color: #efb41c
+  color: lightblue;
 }
 
 .nav-right {
   display: flex;
   align-items: center;
-  text-decoration: none;
   justify-content: space-around;
   font-size: 20px;
   font-family: 'Barlow Condensed', sans-serif;
@@ -92,4 +100,3 @@
   color: inherit;
   text-decoration: none;
 }
-

@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  
+  text-decoration: none;
 }
 
 .category-image {
@@ -28,7 +28,7 @@
 
 .category-title {
   color: black;
-  font-size: 45px;
+  font-size: 55px;
 }
 
 .logo-home {

@@ -6,7 +6,7 @@ const Nav = (props) => {
     <div className='nav-container'>
       <span className='nav-logo'>
         <Link to='/'>
-        <img src="../vtradelogowhite.png" alt="vtrade logo" className="vtrade-logo" />
+          <img src="../vtradelogowhite.png" alt="vtrade logo" className="vtrade-logo" />
         </Link>
       </span>
       <div className='nav-right'>
