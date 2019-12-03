@@ -7,11 +7,11 @@ const itemsSchema = new Schema({
         required: true
     },
     url: String,
-    price: Number,
+    price: String,
     description: String,
     contactInfo: {
-        name: String,
-        phoneNum: Number,
+        userName: String,
+        phoneNum: String,
         email: String
     },
     category: String,

@@ -70,6 +70,12 @@ class MainProvider extends Component {
       console.log(this.state.skiing)
     })
   }
+
+  addNewItem = newItem => {
+    axios.post('/classifiedItems', newItem)
+      .then(res => console.log("wahoo"))
+      .catch(err => console.log(err))
+  }
   
   render() {
     
@@ -80,6 +86,7 @@ class MainProvider extends Component {
         getCycling: this.getCycling,
         getFishing: this.getFishing,
         getSkiing: this.getSkiing,
+        addNewItem: this.addNewItem,
       }}>
         {this.props.children}
       </Provider>
