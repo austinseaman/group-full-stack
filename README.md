@@ -1,3 +1,3 @@
 # group-full-stack
 
-README COMEING SOON!
+README COMING SOON!
