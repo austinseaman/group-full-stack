@@ -9,7 +9,7 @@ class Fishing extends Component {
     render() {
         const mappedFishing = this.props.fishing.map((fish, i) => <Item key={i + fish.price} price={fish.price} name={fish.name} url={fish.url} _id={fish._id} />)
         return (
-            <div>
+            <div className="items-container">
                 {mappedFishing}
             </div>
         );
