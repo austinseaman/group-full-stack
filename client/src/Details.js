@@ -19,7 +19,6 @@ class Details extends React.Component {
       this.setState({
         storage: res.data
       })
-      console.log(res.data)
     })
 
   }
@@ -36,7 +35,7 @@ class Details extends React.Component {
       <Link to={`/${this.state.storage.category}`}>Back</Link>
       <h2>{name}</h2>
       <img src={url} alt='the pic'></img>
-      <h4>{price}</h4>
+      <h4>${price}</h4>
       <p>{description}</p>
       <h6>{this.state.storage.contactInfo.name}</h6>
       <h6>{this.state.storage.contactInfo.phoneNum}</h6>

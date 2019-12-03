@@ -24,8 +24,6 @@ class MainProvider extends Component {
       this.setState({camping: campingFilter})
       
       // setState
-      
-      console.log(this.state.camping)
     })
   }
 
@@ -50,10 +48,6 @@ class MainProvider extends Component {
         return category.category === 'Fishing' 
       })
       this.setState({fishing: fishingFilter})
-      
-      // setState
-      
-      console.log(this.state.fishing)
     })
   }
   
@@ -64,10 +58,6 @@ class MainProvider extends Component {
         return category.category === 'Skiing' 
       })
       this.setState({skiing: skiingFilter})
-
-      // setState
-
-      console.log(this.state.skiing)
     })
   }
   
