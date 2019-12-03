@@ -1,7 +1,6 @@
 import React from 'react';
 import Nav from "./Nav";
 import { Switch, Route } from "react-router-dom";
-
 import Home from "./Home";
 import Camping from "./Camping";
 import Cycling from "./Cycling";

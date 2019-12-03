@@ -75,9 +75,6 @@ class MainProvider extends Component {
       </Provider>
     )
   }
-
-
-
 }
 
 export default MainProvider

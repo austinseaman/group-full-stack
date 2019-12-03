@@ -10,7 +10,8 @@ const Nav = (props) => {
         </Link>
       </span>
       <div className='nav-right'>
-      <Link to="/post">Post</Link>
+      <Link className='post-link' to="/post"><h1>Post</h1></Link>
+
       <span className='dropdown'>
         <h3 className='dropdown-title'>Categories</h3>
         <div className='dropdown-content'>

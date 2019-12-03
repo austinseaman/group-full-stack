@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:100,400&display=swap');
 .nav-container {
   color: white;
-  height: 80px;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   
 }
+
+.post-link {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin-right: 6px;
+}
+.post-link:hover {
+  color: #efb41c
+}
+
+.dropdown:hover {
+  color: #efb41c
+}
+
 .nav-logo Link {
     text-decoration: none;
 }
@@ -39,18 +53,16 @@
 }
 .dropdown-content {
   margin-right: 8px;
-  color: black;
+  color: white;
+  background-color: black;
   display: none;
   position: absolute;
   right: 0;
-  background-color: rgb(155, 155, 155);
   width: 90px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-size: 12px;
   font-family: 'Barlow Condensed', sans-serif;
   align-items: center;
-  justify-content: center;
 }
 .dropdown:hover .dropdown-content {
   display: inline-block;
@@ -58,11 +70,12 @@
 .dropdown-content h2 {
   width: auto;
   text-align: center;
+  /* padding: 9px; */
+  color: white;
+  text-decoration: none;
 }
 .dropdown-content h2:hover {
-  border: 3px solid black;
-  width: auto;
-  align-self: center;
+  color: #efb41c
 }
 
 .nav-right {
@@ -73,8 +86,10 @@
   font-size: 20px;
   font-family: 'Barlow Condensed', sans-serif;
 }
+
 .nav-right Link {
   font-family: inherit;
   color: inherit;
   text-decoration: none;
 }
+
