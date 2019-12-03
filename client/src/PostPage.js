@@ -9,7 +9,7 @@ class PostPage extends Component {
         super(props)
         this.state = {
             contactInfo: {
-                userName: '',
+                name: '',
                 phoneNum: '',
                 email: '',
             },
@@ -46,7 +46,7 @@ class PostPage extends Component {
         this.props.addNewItem(newItem)
         this.setState({ 
         contactInfo: {
-            userName: '',
+            name: '',
             phoneNum: '',
             email: '',
         },

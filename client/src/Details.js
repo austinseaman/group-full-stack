@@ -25,19 +25,25 @@ class Details extends React.Component {
         <Link className='backButton' to={`/${this.state.storage.category}`}>Back to {this.state.storage.category}</Link>
        </div>
        <div className='mainContainer'>
-         <div>
+         <div className='imgContainer'>
           <img className='detailImg' src={url} alt='the pic'></img>
          </div>
-         <div>
-          <h2>{name}</h2>
-          <h4>${price}</h4>
-          <p>Description: {description}</p>
-         </div>
-         <div>
-          <h6>Contact Info</h6>
-          <h6>Name: {this.state.storage.contactInfo.name}</h6>
-          <h6>Phone Number: {this.state.storage.contactInfo.phoneNum}</h6>
-          <h6>Email: {this.state.storage.contactInfo.email}</h6>
+         <div className='npd'>
+           <div className='spaceContainer'>
+            <h1>{name}</h1>
+            <h2>${price}</h2>
+            <p>Description: {description}</p>
+           <hr style={{height:'1px', 
+                      color:'black',
+                      backGroundColor:'black',
+                      }}/>
+           </div>
+           <div className='contactInfo'>
+            <h5>Contact Info</h5>
+            <h5>Name: {this.state.storage.contactInfo.name}</h5>
+            <h5>Phone Number: {this.state.storage.contactInfo.phoneNum}</h5>
+            <h5>Email: {this.state.storage.contactInfo.email}</h5>
+           </div>
          </div>
        </div>
      </div>
