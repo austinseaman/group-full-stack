@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:100,400&display=swap');
-<<<<<<< HEAD
-* {
-    font-family: 'Barlow Condensed', sans-serif;
-}
-.productinfo {
-=======
+
 
 * {
     font-family: 'Barlow Condensed', sans-serif;
@@ -12,8 +7,7 @@
 }
 
 .productinfo {
-    
->>>>>>> 310f2fbf6c1ae9220cc6a95f4a7caa4ac8d0caeb
+
     display: inline-block;
     background-color: white;
     text-align: center;
@@ -29,7 +23,7 @@
   text-decoration: none;
   color: black;
 }
-<<<<<<< HEAD
+
 .items-container {
     display: flex;
     flex-wrap: wrap;
@@ -43,17 +37,6 @@
         justify-content: center;
         align-content: space-between;
     }
-=======
-
-.items-container {
-    
-    display: flex;
-    
-    flex-wrap: wrap;
-    justify-content: left;
-    align-content: space-between;
-    
-     
     
 }
 
@@ -71,8 +54,6 @@
          
         
     }
-
->>>>>>> 310f2fbf6c1ae9220cc6a95f4a7caa4ac8d0caeb
     .imgs {
         width: 300px;
         height: 300px;
