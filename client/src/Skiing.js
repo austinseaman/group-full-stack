@@ -9,7 +9,7 @@ class Skiing extends Component {
     render() {
         const mappedSkiing = this.props.skiing.map((ski, i) => <Item key={i + ski.price} price={ski.price} name={ski.name} url={ski.url} _id={ski._id} />)
         return (
-            <div>
+            <div className="items-container">
                 {mappedSkiing}
             </div>
         );
