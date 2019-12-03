@@ -8,3 +8,8 @@
 .imgs {
     max-width: 200px;
 }
+
+.productName {
+  text-decoration: none;
+  color: black;
+}

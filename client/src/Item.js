@@ -20,7 +20,7 @@ class Item extends Component {
         let {price, name, url, _id} = this.props;
         return (
             <div className="productinfo">
-                <Link to={`/details/${_id}`}>
+                <Link className='productName' to={`/details/${_id}`}>
                     <img className="imgs" alt="item" src={url}></img>
                     <h2>{name}</h2>
                     <h3>

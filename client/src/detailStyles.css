@@ -1,0 +1,24 @@
+.backButton {
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  border-radius: 4px;
+}
+.wrContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detailImg {
+  /* float: left; */
+}
+.buttonDiv {
+  margin-top: 10px;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  /* width: 600px; */
+  margin: 0 10% 0 10%;
+}
