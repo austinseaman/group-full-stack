@@ -11,7 +11,7 @@ const itemsSchema = new Schema({
     description: String,
     contactInfo: {
         name: String,
-        phoneNum: Number,
+        phoneNum: String,
         email: String
     },
     category: String,
