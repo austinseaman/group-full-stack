@@ -2,7 +2,6 @@ import React from 'react';
 import Nav from "./Nav";
 // import Footer from "./Footer";
 import { Switch, Route } from "react-router-dom";
-
 import Home from "./Home";
 // import About from "./About";
 import Camping from "./Camping";

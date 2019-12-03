@@ -30,7 +30,6 @@ class Details extends React.Component {
 
   render() {
     let {name, url, price, description} = this.state.storage
-    let lowerCat = this.state.storage.category
     
     return (
      <div>
