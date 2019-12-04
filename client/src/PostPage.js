@@ -55,6 +55,7 @@ class PostPage extends Component {
         price: '',
         description: '',
         category: ''})
+        alert(`Nice! You're item has been successfully posted!`)
     }
     render() {
         console.log(this.state)

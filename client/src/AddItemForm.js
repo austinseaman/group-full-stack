@@ -12,6 +12,7 @@ const AddItemForm = (props) => {
                     <input onChange={handleContactChange} type="text" name="name" value={props.contactInfo.name} placeholder="Your Name" required />
                     <input onChange={handleContactChange} type="tel" pattern='[0-9]{3} [0-9]{3} [0-9]{4}' name="phoneNum" value={props.contactInfo.phoneNum} placeholder="Tel. eg. xxx-xxx-xxxx" required />
                     <input onChange={handleContactChange} type="email" name="email" value={props.contactInfo.email} placeholder="Email" required />
+                    <br/>
                     <select name="category" onChange={handleCategoryChange}>
                         <option value="default">Item Category</option>
                         <option value="Camping">Camping</option>
