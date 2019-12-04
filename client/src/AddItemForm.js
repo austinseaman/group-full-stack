@@ -2,7 +2,7 @@ import React from 'react'
 const AddItemForm = (props) => {
     const { handleCategoryChange, handleChange, handleContactChange, handleSubmit, name, url, price } = props
     return (
-        <div>
+        <div className='form'>
             <h1>Sell your items</h1>
             <form onSubmit={handleSubmit}>
                 <div>
