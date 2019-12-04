@@ -114,3 +114,9 @@ textarea {
         display:inline-block;
     }
   }
+
+
+  .page-title {
+      text-align: center;
+      font-size: 60px
+  }
