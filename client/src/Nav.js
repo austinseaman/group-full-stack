@@ -1,6 +1,7 @@
 import React from 'react';
 import './navStyles.css';
 import { Link } from "react-router-dom";
+
 const Nav = (props) => {
   return (
     <div className='nav-container'>
