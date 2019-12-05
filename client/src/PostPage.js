@@ -26,15 +26,15 @@ class PostPage extends Component {
     }
     handleContactChange = (e) => {
         let { name, value } = e.target;
-        this.setState((prevState)=>{ 
-            return {   
-                contactInfo: { ...prevState.contactInfo, [name]: value}
+        this.setState((prevState) => {
+            return {
+                contactInfo: { ...prevState.contactInfo, [name]: value }
             }
         })
     }
     handleChange = (e) => {
         let { name, value } = e.target;
-        this.setState({ [name]: value} )
+        this.setState({ [name]: value })
     }
     // handleChange = (e) => {
     //     let {name, value } = e.target;
@@ -44,28 +44,29 @@ class PostPage extends Component {
         e.preventDefault()
         const newItem = this.state
         this.props.addNewItem(newItem)
-        this.setState({ 
-        contactInfo: {
+        this.setState({
+            contactInfo: {
+                name: '',
+                phoneNum: '',
+                email: '',
+            },
+            url: '',
             name: '',
-            phoneNum: '',
-            email: '',
-        },
-        url: '',
-        name: '',
-        price: '',
-        description: '',
-        category: ''})
+            price: '',
+            description: '',
+            category: ''
+        })
         alert(`Nice! You're item has been successfully posted!`)
     }
     render() {
         console.log(this.state)
         return (
-            <AddItemForm 
-                {...this.state} 
+            <AddItemForm
+                {...this.state}
                 handleChange={this.handleChange}
                 handleCategoryChange={this.handleCategoryChange}
                 handleContactChange={this.handleContactChange}
-                handleSubmit={this.handleSubmit}/>
+                handleSubmit={this.handleSubmit} />
         )
     }
 }

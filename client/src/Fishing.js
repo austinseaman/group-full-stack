@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {withProvider} from './MainProvider'
+import { withProvider } from './MainProvider'
 import Item from './Item'
 
 class Fishing extends Component {

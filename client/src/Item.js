@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withProvider } from './MainProvider';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class Item extends Component {
@@ -17,7 +17,7 @@ class Item extends Component {
     // }
 
     render() {
-        let {price, name, url, _id} = this.props;
+        let { price, name, url, _id } = this.props;
         return (
             <div className="productinfo">
                 <Link className='productName' to={`/details/${_id}`}>

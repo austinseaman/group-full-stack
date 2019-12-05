@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-const {Provider, Consumer} = React.createContext();
+const { Provider, Consumer } = React.createContext();
 class MainProvider extends Component {
   constructor() {
     super();
@@ -15,9 +15,9 @@ class MainProvider extends Component {
     axios.get('/classifiedItems').then((res) => {
       // filter
       const campingFilter = res.data.filter((category) => {
-        return category.category === 'Camping' 
+        return category.category === 'Camping'
       })
-      this.setState({camping: campingFilter})
+      this.setState({ camping: campingFilter })
       // setState
       console.log(this.state.camping)
     })
@@ -26,9 +26,9 @@ class MainProvider extends Component {
     axios.get('/classifiedItems').then((res) => {
       // filter
       const cyclingFilter = res.data.filter((category) => {
-        return category.category === 'Cycling' 
+        return category.category === 'Cycling'
       })
-      this.setState({cycling: cyclingFilter})
+      this.setState({ cycling: cyclingFilter })
       // setState
       console.log(this.state.cycling)
     })
@@ -37,9 +37,9 @@ class MainProvider extends Component {
     axios.get('/classifiedItems').then((res) => {
       // filter
       const fishingFilter = res.data.filter((category) => {
-        return category.category === 'Fishing' 
+        return category.category === 'Fishing'
       })
-      this.setState({fishing: fishingFilter})
+      this.setState({ fishing: fishingFilter })
       // setState
       console.log(this.state.fishing)
     })
@@ -48,9 +48,9 @@ class MainProvider extends Component {
     axios.get('/classifiedItems').then((res) => {
       // filter
       const skiingFilter = res.data.filter((category) => {
-        return category.category === 'Skiing' 
+        return category.category === 'Skiing'
       })
-      this.setState({skiing: skiingFilter})
+      this.setState({ skiing: skiingFilter })
       // setState
       console.log(this.state.skiing)
     })
@@ -76,8 +76,8 @@ class MainProvider extends Component {
   }
 }
 export default MainProvider
-export function withProvider (Comp) {
+export function withProvider(Comp) {
   return props => <Consumer>
-                    {value => <Comp {...value} {...props} />}
-                  </Consumer>
+    {value => <Comp {...value} {...props} />}
+  </Consumer>
 }
